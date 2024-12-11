@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myHeader {
+            font-size: 40px;
+            color: #502323;
+            width: 280px;
+            border: 3px solid maroon;
+        }
+
+        #dateTime {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #2f4f4f;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 id="myHeader">Hello, World!</h1>
+        <button onclick="changeText()">Pooja Changes</button>
+        <button onclick="displayDateTime()">Show Current Date & Time</button>
+        <div id="dateTime"></div>
+        <script>
+            function changeText() {
+                document.getElementById("myHeader").innerHTML = "Pooja Text Changed!";
+            }
+
+            function displayDateTime() {
+                const now = new Date();
+                const formattedDate = now.toLocaleString();
+                document.getElementById("dateTime").innerHTML = "Current Date & Time: " + formattedDate;
+            }
+        </script>
+    </center>
+</body>
+
+</html>

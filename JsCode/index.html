@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="pooja">JavaScript practice </h1>
+    <button onclick="changeText()">Click Me</button>
+    <p onclick="changeHeaderText('RCS rcs')"><u>Click on text!!</p></u>
+
+    <script>
+        function changeText() {
+            //document.getElementById("pooja").innerHTML = " Pooja status Changed!";
+            document.getElementById("pooja").innerHTML = "Pooja rcs";
+        }
+
+        function changeHeaderText(newText) {
+            document.getElementById("pooja").innerHTML = newText;
+        }
+        let userName = prompt("Enter your name:", "Guest");
+        if (userName) {
+            alert("Hello, " + userName + "!");
+        }
+    </script>
+</body>
+
+</html>
